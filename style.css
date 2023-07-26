@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+ /*Header styles*/
+
+header img {
+    width: 50px;
+}
+
+/*Main styles*/
+main h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.sect-1 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png);
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cont-proyecto {
+    text-align: center;
+    padding: 30px;
+}
+
+.sect-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-content: start;
+    gap: 100px;
+    padding: 30px;
+}
+
+.cajita {
+    background-color: #f0ebe3;
+    width: 360px;
+    height: 420px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 5px 30px -10px rgb(0 0 0 / 60%);
+    justify-self: center
+}
+
+.cajita .imagen {
+    width: 300px;
+}
+
+.cajita .imagen img {
+    width: 100%;
+}
+
+.cajita h3 {
+    padding: 15px;
+}
+
+.cajita .butt button {
+    padding: 10px; 
+}
+
+.sect-3 { 
+    background-color: rgb(242, 242, 242);
+    padding: 20px 500px;
+}
+
+.sect-3 button {
+    margin: 10px auto;
+    padding: 10px 15px;
+    background-color: black ;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/*Footer styles*/
+
+footer {
+    background-color: #f8f9fa;
+    margin-top: 50px;
+}
+
+.sect-4 {
+    display: grid;
+    grid-template-columns: 28% 24% 24% 24%;
+}
+
+.sect-4 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+.sect-4 div h3 {
+    font-size: 15px;
+}
+
+.sect-4 a,p {
+    color: grey;
+}
+
+.div1 {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+}
+
+.div1 a {
+    font-weight: bold;
+    color: grey;
+}
+
+/*Media queries*/
+
+@media (max-width: 1300px) {
+    .sect-2, .sect-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sect-3 {
+        padding: 30px;
+        margin-top: 20px;
+        background-color: rgb(242, 242, 242);
+    }
+    .sect-3 from {
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 880px) {
+    .sect-2, .sect-4 {
+        grid-template-columns: 1fr;
+    }
+    .sect-3 {
+        padding: 30px;
+        margin-top: 20px;
+        background-color: rgb(242, 242, 242);
+    }
+    .sect-3 from {
+        width: 100%;
+        margin: auto;
+    }
+}
